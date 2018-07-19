@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Poveron</display-name>
+
+
+
+
+
+	<!-- REGISTRAZIONE -->
+	<servlet>
+		<servlet-name>Registrazione</servlet-name>
+		<servlet-class>it.accenture.controller.Registrazione</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Registrazione</servlet-name>
+		<url-pattern>/registrazione</url-pattern>
+	</servlet-mapping>
+
+	<!-- LOGIN -->
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>it.accenture.controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+		<!-- LOGOUT -->
+	<servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>it.accenture.controller.Logout</servlet-class> 
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>Logout</servlet-name>
+	<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	<!-- listaprodotti servlet -->
+	
+	<servlet>
+	<servlet-name>ListaOfferte</servlet-name>
+	<servlet-class>it.accenture.controller.ListaProdottiOfferta</servlet-class> 
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>ListaOfferte</servlet-name>
+	<url-pattern>/listaofferte</url-pattern>
+	</servlet-mapping>
+	 
+	
+	<!-- listaProdotti -->
+	
+	<servlet>
+		<servlet-name>listaProdotti</servlet-name>
+		<servlet-class>it.accenture.controller.ListaProdotti</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listaProdotti</servlet-name>
+		<url-pattern>/listaProdotti</url-pattern>
+	</servlet-mapping>
+
+	<!-- Ricerca Per Categoria -->
+	
+	<servlet>
+		<servlet-name>RicercaPerCategoria</servlet-name>
+		<servlet-class>it.accenture.controller.ListaProdottiCategoria</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RicercaPerCategoria</servlet-name>
+		<url-pattern>/ricercapercategoria</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- AggiungiCarrello -->
+	<servlet>
+		<servlet-name>AggiungiCarrello</servlet-name>
+		<servlet-class>it.accenture.controller.AggiungiCarrello</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AggiungiCarrello</servlet-name>
+		<url-pattern>/carrello</url-pattern>
+	</servlet-mapping>
+
+
+
+	
+</web-app>
